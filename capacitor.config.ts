@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'org.poopatrol.app',
-  appName: 'The Poo Patrol',
+  appId: 'org.poocrew.app',
+  appName: 'The Poo Crew',
   webDir: 'out',
 };
 

@@ -56,7 +56,7 @@ export default function ContactUs() {
           <input
             type="hidden"
             name="_subject"
-            value="New Poo Patrol contact form message"
+            value="New Poo Crew contact form message"
           />
           <input type="hidden" name="_template" value="table" />
           <input

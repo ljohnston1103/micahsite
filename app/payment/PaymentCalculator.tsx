@@ -75,7 +75,7 @@ export default function PaymentCalculator() {
       ? `${formatCurrency(total)} twice per month, based on ${formatCurrency(monthlyPrice)}/month.`
       : duration === "six-months"
         ? `Includes ${formatCurrency(sixMonthSavings)} in prepaid savings.`
-        : "Calculated from the current monthly Poo Patrol rate.";
+        : "Calculated from the current monthly Poo Crew rate.";
 
   const venmoHref = useMemo(() => {
     if (!VENMO_PAYMENT_URL) {
@@ -83,7 +83,7 @@ export default function PaymentCalculator() {
     }
 
     const note = [
-      "Poo Patrol",
+      "Poo Crew",
       selectedDuration.label,
       `${dogs} dog${dogs === "1" ? "" : "s"}`,
       name.trim(),

@@ -27,8 +27,8 @@ export default function Home() {
       <section className="hero pooHero">
         <video
           className="heroVideo"
-          src="/poo-patrol-hero.mp4"
-          aria-label="The Poo Patrol service video"
+          src="/poo-crew-hero.mp4"
+          aria-label="The Poo Crew service video"
           autoPlay
           loop
           muted
@@ -38,9 +38,8 @@ export default function Home() {
           <p className="eyebrow">Professional Pet Waste Removal</p>
           <h1>Duty Calls. We Scoop.</h1>
           <p>
-            The Poo Patrol and The Poo Crew keep your yard clean, safe, and
-            ready for family time with dependable pet waste removal for busy
-            homes.
+            The Poo Crew keeps your yard clean, safe, and ready for family time
+            with dependable pet waste removal for busy homes.
           </p>
           <div className="buttonRow">
             <a className="button" href="/contact-us">
@@ -155,7 +154,7 @@ export default function Home() {
             <h3>Your friend gets $10 off.</h3>
             <p>
               Referred new customers receive $10 off their first month of Poo
-              Patrol service.
+              Crew service.
             </p>
           </article>
         </div>
@@ -178,14 +177,14 @@ export default function Home() {
         </div>
         <div
           className="testimonialsGrid"
-          aria-label="Poo Patrol testimonial and service notes"
+          aria-label="Poo Crew testimonial and service notes"
         >
           <article className="testimonialCard">
             <p>
               "Yard looks great and the employee always shows up ready to work
               on time."
             </p>
-            <cite>- Poo Patrol Customer</cite>
+            <cite>- Poo Crew Customer</cite>
           </article>
           <article className="testimonialCard">
             <h3>Service Area</h3>

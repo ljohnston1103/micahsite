@@ -2197,7 +2197,7 @@ textarea:focus {
   }
 }
 
-/* The Poo Patrol business site */
+/* The Poo Crew business site */
 :root {
   --paper: rgb(247, 251, 248);
   --paper-strong: rgb(255, 255, 255);
@@ -2689,6 +2689,292 @@ textarea:focus {
   transform: none;
 }
 
+.gameHero {
+  background:
+    linear-gradient(135deg, rgba(221, 239, 230, 0.94), rgba(255, 255, 255, 0.92)),
+    repeating-linear-gradient(112deg, rgba(22, 101, 58, 0.08) 0 1px, transparent 1px 22px);
+}
+
+.gameHeroPanel {
+  align-items: end;
+  aspect-ratio: 4 / 3;
+  background:
+    linear-gradient(180deg, rgba(18, 39, 31, 0.02), rgba(18, 39, 31, 0.58)),
+    linear-gradient(150deg, rgba(22, 101, 58, 0.2), transparent 34%),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.22) 0 2px, transparent 2px 32px),
+    linear-gradient(180deg, rgb(177, 218, 141) 0 24%, rgb(99, 166, 82) 24% 100%);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  min-height: 320px;
+  overflow: hidden;
+  padding: 22px;
+}
+
+.gameHeroPanel span {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 8px;
+  color: var(--ink);
+  font-weight: 900;
+  max-width: 26ch;
+  padding: 12px 14px;
+}
+
+.gameSection {
+  background: linear-gradient(180deg, var(--paper), rgba(221, 239, 230, 0.6));
+}
+
+.gameIntro {
+  margin: 0 auto 38px;
+  max-width: 980px;
+  text-align: center;
+}
+
+.gameIntro h2 {
+  max-width: none;
+}
+
+.pickupGame {
+  display: grid;
+  gap: 18px;
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.gameHud {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.gameHud div,
+.gameRuleCards article {
+  background:
+    linear-gradient(165deg, rgba(255, 255, 255, 0.96), rgba(247, 251, 248, 0.88)),
+    var(--paper-strong);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: 6px;
+  padding: 16px;
+}
+
+.gameHud span,
+.gameRuleCards span {
+  color: var(--ink-muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.gameHud strong,
+.gameRuleCards strong {
+  color: var(--ink);
+  font-size: clamp(1.25rem, 2.4vw, 1.8rem);
+  line-height: 1;
+}
+
+.pickupYard {
+  aspect-ratio: 16 / 9;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.18), transparent 18%),
+    repeating-linear-gradient(35deg, rgba(255, 255, 255, 0.12) 0 5px, transparent 5px 20px),
+    linear-gradient(140deg, rgb(120, 190, 87), rgb(67, 143, 69));
+  border: 6px solid rgb(103, 74, 43);
+  border-radius: 8px;
+  box-shadow: var(--shadow-lift);
+  min-height: 360px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pickupYard2 {
+  background:
+    radial-gradient(circle at 72% 24%, rgba(255, 255, 255, 0.18), transparent 18%),
+    repeating-linear-gradient(120deg, rgba(255, 255, 255, 0.1) 0 4px, transparent 4px 24px),
+    linear-gradient(140deg, rgb(139, 199, 91), rgb(55, 132, 78));
+}
+
+.pickupYard3 {
+  background:
+    radial-gradient(circle at 30% 74%, rgba(255, 255, 255, 0.16), transparent 17%),
+    repeating-linear-gradient(72deg, rgba(255, 255, 255, 0.1) 0 4px, transparent 4px 22px),
+    linear-gradient(140deg, rgb(104, 183, 97), rgb(44, 126, 83));
+}
+
+.pickupYard4 {
+  background:
+    radial-gradient(circle at 82% 64%, rgba(255, 255, 255, 0.16), transparent 17%),
+    repeating-linear-gradient(18deg, rgba(255, 255, 255, 0.11) 0 5px, transparent 5px 23px),
+    linear-gradient(140deg, rgb(142, 196, 80), rgb(65, 139, 60));
+}
+
+.yardFence {
+  background:
+    repeating-linear-gradient(90deg, rgba(132, 87, 46, 0.84) 0 18px, rgba(110, 69, 35, 0.84) 18px 23px, transparent 23px 40px);
+  height: 52px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.yardPath {
+  background: rgba(226, 188, 121, 0.54);
+  border: 1px solid rgba(103, 74, 43, 0.18);
+  border-radius: 999px;
+  bottom: -12%;
+  height: 30%;
+  left: 18%;
+  position: absolute;
+  transform: rotate(-7deg);
+  width: 68%;
+}
+
+.yardBush {
+  background:
+    radial-gradient(circle at 28% 40%, rgb(42, 122, 60), transparent 34%),
+    radial-gradient(circle at 58% 30%, rgb(57, 147, 70), transparent 35%),
+    radial-gradient(circle at 72% 62%, rgb(39, 112, 58), transparent 38%);
+  height: 120px;
+  opacity: 0.88;
+  position: absolute;
+  width: 170px;
+}
+
+.yardBushOne {
+  left: -34px;
+  top: 50px;
+}
+
+.yardBushTwo {
+  bottom: 18px;
+  right: -44px;
+}
+
+.pooTarget {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  height: 54px;
+  justify-content: center;
+  left: var(--poo-x);
+  padding: 0;
+  position: absolute;
+  top: var(--poo-y);
+  transform: translate(-50%, -50%) rotate(var(--poo-rotation)) scale(var(--poo-scale));
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease;
+  width: 58px;
+  z-index: 2;
+}
+
+.pooTarget span,
+.pooTarget span::before,
+.pooTarget span::after {
+  background: linear-gradient(180deg, rgb(128, 73, 35), rgb(82, 45, 25));
+  border: 2px solid rgba(55, 29, 14, 0.42);
+  box-shadow: 0 7px 12px rgba(18, 39, 31, 0.2);
+  display: block;
+  position: absolute;
+}
+
+.pooTarget span {
+  border-radius: 999px 999px 10px 10px;
+  height: 20px;
+  left: 11px;
+  top: 25px;
+  width: 36px;
+}
+
+.pooTarget span::before {
+  border-radius: 999px;
+  content: "";
+  height: 18px;
+  left: 5px;
+  top: -14px;
+  width: 26px;
+}
+
+.pooTarget span::after {
+  border-radius: 999px;
+  content: "";
+  height: 15px;
+  left: 12px;
+  top: -27px;
+  width: 15px;
+}
+
+.pooTarget:hover,
+.pooTarget:focus-visible {
+  transform: translate(-50%, -50%) rotate(var(--poo-rotation)) scale(calc(var(--poo-scale) * 1.15));
+}
+
+.pooTarget:focus-visible {
+  outline: 4px solid rgba(246, 204, 82, 0.86);
+  outline-offset: 4px;
+}
+
+.pooTarget.isPicked {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) rotate(var(--poo-rotation)) scale(0.3);
+}
+
+.gameOverlay {
+  align-content: center;
+  backdrop-filter: blur(8px);
+  background: rgba(247, 251, 248, 0.84);
+  display: grid;
+  gap: 18px;
+  inset: 0;
+  justify-items: center;
+  padding: 24px;
+  position: absolute;
+  text-align: center;
+  z-index: 4;
+}
+
+.gameOverlay h3 {
+  max-width: 24ch;
+}
+
+.gameOverlayActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.gameProgress {
+  background: rgba(18, 39, 31, 0.12);
+  border-radius: 999px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.gameProgress span {
+  background: linear-gradient(90deg, var(--forest), var(--honey));
+  display: block;
+  height: 100%;
+  transition: width 160ms ease;
+}
+
+.gameRuleCards {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gameRuleCards p {
+  margin: 0;
+}
+
 select {
   appearance: none;
   background:
@@ -2752,5 +3038,31 @@ select:focus {
 
   .referralGrid {
     grid-template-columns: 1fr;
+  }
+
+  .gameHud,
+  .gameRuleCards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pickupYard {
+    aspect-ratio: 4 / 5;
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 560px) {
+  .gameHud,
+  .gameRuleCards {
+    grid-template-columns: 1fr;
+  }
+
+  .pickupYard {
+    min-height: 460px;
+  }
+
+  .pooTarget {
+    height: 50px;
+    width: 54px;
   }
 }

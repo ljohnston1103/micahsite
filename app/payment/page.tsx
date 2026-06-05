@@ -27,7 +27,7 @@ export default function Payment() {
       <section className="pageHero compactHero paymentHero">
         <div>
           <p className="eyebrow">Payment</p>
-          <h1>Pay For Your Poo Patrol Service.</h1>
+          <h1>Pay For Your Poo Crew Service.</h1>
           <p className="contactLead">
             Enter your name, address, payment option, and number of dogs to
             calculate your total before paying online.
