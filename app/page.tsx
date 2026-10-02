@@ -1,3 +1,5 @@
+import HeroVideo from "./HeroVideo";
+
 const serviceHighlights = [
   {
     title: "Recurring Treatments",
@@ -23,17 +25,9 @@ const pricingRows = [
 
 export default function Home() {
   return (
-    <main className="pageShell">
+    <main id="main-content" tabIndex={-1} className="pageShell">
       <section className="hero pooHero">
-        <video
-          className="heroVideo"
-          src="/poo-crew-hero.mp4"
-          aria-label="The Poo Crew service video"
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
+        <HeroVideo />
         <div className="heroContent pooHeroContent">
           <p className="eyebrow">Professional Pet Waste Removal</p>
           <h1>Duty Calls. We Scoop.</h1>
@@ -97,7 +91,7 @@ export default function Home() {
             <p className="eyebrow">Monthly Plans</p>
             <span className="savingsBadge">10% off 6-month prepaid</span>
           </div>
-          <div className="pricingTableWrap">
+          <div className="pricingTableWrap" role="region" aria-label="Monthly plan prices" tabIndex={0}>
             <table className="pricingTable">
               <thead>
                 <tr>

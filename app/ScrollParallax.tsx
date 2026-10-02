@@ -26,7 +26,7 @@ export default function ScrollParallax() {
     const collectElements = () => {
       elements = Array.from(
         document.querySelectorAll<HTMLElement>(
-          ".pageShell > section > *:not(.heroVideo)",
+          ".pageShell > section > *:not(.heroVideo):not(.heroMotion)",
         ),
       );
 

@@ -23,7 +23,7 @@ const paymentOptions = [
 
 export default function Payment() {
   return (
-    <main className="pageShell">
+    <main id="main-content" tabIndex={-1} className="pageShell">
       <section className="pageHero compactHero paymentHero">
         <div>
           <p className="eyebrow">Payment</p>

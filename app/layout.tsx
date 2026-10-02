@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import ScrollParallax from "./ScrollParallax";
+import SiteHeader from "./SiteHeader";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -9,13 +10,6 @@ export const metadata: Metadata = {
   description:
     "Professional pet waste removal with reliable yard cleanups, simple scheduling, and easy payment options.",
 };
-
-const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Contact Us", href: "/contact-us" },
-  { label: "Payment", href: "/payment" },
-  { label: "Poo Pickup Game", href: "/poo-pickup-game" },
-];
 
 export default function RootLayout({
   children,
@@ -26,27 +20,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ScrollParallax />
-        <header className="siteHeader">
-          <Link className="brand" href="/" aria-label="The Poo Crew home">
-            <img
-              className="brandLogo"
-              src="/poo-crew-logo-cropped.png"
-              alt=""
-              aria-hidden="true"
-            />
-            <span>The Poo Crew</span>
-          </Link>
-          <nav className="navLinks" aria-label="Main navigation">
-            {navItems.map((item) => (
-              <Link key={item.href} href={item.href}>
-                {item.label}
-              </Link>
-            ))}
-            <a className="phonePill" href="tel:3308159903">
-              330-815-9903
-            </a>
-          </nav>
-        </header>
+        <a className="skipLink" href="#main-content">Skip to content</a>
+        <SiteHeader />
         {children}
         <footer className="footer">
           <p>The Poo Crew</p>

@@ -1,6 +1,6 @@
 export default function ContactUs() {
   return (
-    <main className="pageShell">
+    <main id="main-content" tabIndex={-1} className="pageShell">
       <section className="pageHero compactHero">
         <div>
           <p className="eyebrow">Contact Us</p>

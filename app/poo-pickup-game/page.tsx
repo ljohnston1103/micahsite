@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function PooPickupGamePage() {
   return (
-    <main className="pageShell gamePage">
+    <main id="main-content" tabIndex={-1} className="pageShell gamePage">
       <section className="pageHero compactHero gameHero">
         <div>
           <p className="eyebrow">Poo Pickup Game</p>
